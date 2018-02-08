@@ -22,7 +22,9 @@ const Note = (function(){
       previewDiv.innerHTML = `
       <b>${title}</b>
       <p>${shortBody}</p>
-      <a href="#" onclick="App.showDatFullness(this)" data-id='${this.id}'>Show</a>`
+      <a href="#" onclick="App.showDatFullness(this)" data-id='${this.id}'>Show</a>
+      <a href="#" onclick="App.delete(this)" data-id='${this.id}'>Delete</a>
+      `
       return previewDiv
     }
 
